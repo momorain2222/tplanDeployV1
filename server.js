@@ -1,7 +1,7 @@
 var express = require("express");
-var morgan = require("morgan");
 var compression = require("compression");
 var helmet = require("helmet");
+var morgan = require("morgan");
 
 const APP_PORT = 8080;
 
@@ -19,5 +19,5 @@ app.get("*", function(req, res) {
   res.sendFile(__dirname + "/build/index.html");
 });
 
-// Listen to port 3000
-app.listen(APP_PORT,'http://127.0.0.1');
+//server  : Listen to port 8080
+app.listen(APP_PORT);
