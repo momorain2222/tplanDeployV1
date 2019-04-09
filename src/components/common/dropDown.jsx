@@ -6,13 +6,12 @@ export default class DropdownSelect extends Component {
 
   handleChange = (e, { value }) => {
     this.setState({ value });
-    //  this.setState({ error: false });
     this.props.onChnage(value);
   };
 
   render() {
     const { value } = this.state;
-    const { options, placeholder, error } = this.props;
+    const { options, placeholder, error, id } = this.props;
     return (
       <Grid columns={1}>
         <Grid.Column>
@@ -25,6 +24,7 @@ export default class DropdownSelect extends Component {
             active
             fluid
             error={error}
+            id={id}
           />
         </Grid.Column>
       </Grid>

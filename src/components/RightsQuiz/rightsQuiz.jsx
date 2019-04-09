@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { getCategories } from "./quizCategory";
 import DropdownSelect from "../common/dropDown";
-import Footer from "../layout/footer";
 import MainFooter from "../layout/mainFooter";
 
 class RightsQuiz extends React.Component {
@@ -56,7 +55,7 @@ class RightsQuiz extends React.Component {
     const { currentStep } = this.state;
     this.setState({ currentStep: currentStep - 1 });
     //go to start Quiz page
-    this.props.history.push("/movies/new");
+    this.props.history.push("/");
   };
 
   render() {
@@ -70,25 +69,29 @@ class RightsQuiz extends React.Component {
             <div className="quiz-inner">
               <div id="quiz-banner" className="py-5 bg-info text-white">
                 <div className="container">
-                  <div className="d-none d-sm-block ">
-                    <h1 className="title h1 my-4">Know Your Rights</h1>
-                    <h4>Start answer the short and quick questions</h4>
+                  <div className="d-none d-sm-block text-center">
+                    <h1 className="bannerTitle display-2 my-4 ">
+                      <strong>Know Your Benefits and allowance</strong>
+                    </h1>
+                    <h4 className="display-4 bannerDesc">
+                      Start answer the short and quick questions
+                    </h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="container" id="quiz-start-content">
+          <div className="container contentFont" id="quiz-start-content">
             <div className="d-flex justify-content-center align-items-center flex-column">
-              <h1 className="title m-5 col-10 text-center">
+              <h1 className="title m-5 col-10 text-center h1">
                 Are you confident in the future?
               </h1>
-              <div className="col-6 text-center">
+              <div className="text-center">
                 <article className="article">
-                  <p className="display-7">
-                    Take our quiz, learn important rights you have is expected
-                    to protect your future aimport
+                  <p className="display-5">
+                    Tell us about yourself and know the support you are eligible
+                    to receive
                   </p>
                 </article>
               </div>
@@ -97,16 +100,17 @@ class RightsQuiz extends React.Component {
               <div className="row mt-5">
                 <div className="col mb-3 mr-5">
                   <div className="d-flex flex-column justify-content center">
-                    <div className="text-center mb-4">
+                    <div className="text-center mb-5">
                       {" "}
-                      <h3 className="text-info">Choose your age group </h3>
+                      <h2 className="text-info ">Choose your age group </h2>
                     </div>
                     <div className="required field">
                       <DropdownSelect
                         options={categories}
                         onChnage={this.handleChange}
                         error={this.state.error}
-                        placeholder={"Please chooose your age group"}
+                        placeholder={"Please select one age group"}
+                        id="quizDropDown"
                       />
                     </div>
                   </div>
@@ -120,7 +124,7 @@ class RightsQuiz extends React.Component {
                     onClick={this.handleStart}
                   >
                     <div className="d-flex p-2 justify-content-between">
-                      <span> Start </span>
+                      <span className="btnFont"> Start </span>
                       <i className="fas fa-arrow-right" />
                     </div>
                   </button>

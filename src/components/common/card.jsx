@@ -30,7 +30,7 @@ const Card = ({ id, title, desc, linkPath, linkColor, linkLabel, onPress }) => {
                 onClick={() => onPress()}
                 className={`btn btn-raised ${linkColor} text-white`}
               >
-                {linkLabel}
+                <p className="display-6">{linkLabel}</p>
               </Link>
             </div>
           </div>

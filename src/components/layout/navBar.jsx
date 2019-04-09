@@ -12,7 +12,8 @@ class NavBar extends Component {
             "
             >
               <h1>
-                <span className="text-info p-1">T</span>-Plan
+                <span className="text-info p-1 display-3 bannerTitle">T</span>
+                <span className=" p-1 display-3 bannerTitle">-Plan</span>
               </h1>
             </div>
           </NavLink>
@@ -27,11 +28,17 @@ class NavBar extends Component {
             <span className="navbar-toggler-icon" />
           </button>
 
-          <div className="collapse navbar-collapse" id="tplan-nav">
-            <div className="navbar-nav ml-auto">
+          <div className="collapse navbar-collapse " id="tplan-nav">
+            <div className="navbar-nav ml-auto navFont">
+              <Link className="nav-link nav-item" to="/">
+                <div className="text-center">
+                  <p className="navTitle ">Home</p>
+                </div>
+              </Link>
+
               <NavLink className="nav-link nav-item" to="/rightsQuiz">
                 <div className="text-center">
-                  <p className="navTitle">Rights Quiz </p>
+                  <p className="navTitle ">Benefits</p>
                 </div>
               </NavLink>
 
@@ -43,7 +50,7 @@ class NavBar extends Component {
 
               <NavLink className="nav-link nav-item" to="/courses">
                 <div className="text-center">
-                  <p className="navTitle">Course</p>
+                  <p className="navTitle">Education</p>
                 </div>
               </NavLink>
               <NavLink className="nav-link nav-item" to="/housing">

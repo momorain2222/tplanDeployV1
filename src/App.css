@@ -4,14 +4,33 @@ img {
 
 @media (min-width: 769px) {
   .container {
-    margin: 0.5 rem auto;
+    margin: 0.4 rem auto;
   }
 }
 
-.content {
-  min-height: 100%;
+/*banner*/
+.bannerTitle {
+  font-family: "Paytone One", sans-serif;
 }
 
+.bannerDesc {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+.contentFont {
+  min-height: 100%;
+  font-family: "Questrial", sans-serif;
+}
+
+.btnFont {
+  font-family: "Paytone One", sans-serif;
+  font-size: 20px;
+}
+
+.subTitleFont {
+  font-family: "Josefin Sans", sans-serif;
+}
 /* home component css*/
 .home-inner {
   padding-top: 100px;
@@ -54,11 +73,12 @@ img {
 /* Nav bar css*/
 .navbar {
   border-bottom: #69d4e2 3px solid;
-  opacity: 0.96;
+  opacity: 0.9;
 }
 
 .navTitle {
-  font-size: 15px !important;
+  font-size: 16px !important;
+  font-family: "Josefin Sans", sans-serif !important;
 }
 
 /* landing component css*/
@@ -70,7 +90,7 @@ img {
 }
 
 .landing-inner {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -255,6 +275,12 @@ img {
 #quiz-main-content {
   margin-bottom: 100px;
   background-color: #fff;
+}
+
+#quizDropDown {
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
 }
 
 /*bootstrap button customized*/

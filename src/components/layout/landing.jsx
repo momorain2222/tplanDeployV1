@@ -106,15 +106,17 @@ class Landing extends Component {
                   >
                     <h1
                       id="homeTitle"
-                      className="col-md-12 d-none d-lg-block display-1 text-white"
+                      className="col-md-12 d-none d-lg-block display-1 text-white bannerTitle"
                     >
                       <strong>Plan Future With Confidence</strong>
                     </h1>
 
-                    <p className="display-6">
-                      Making the transition into adulthood easy for you and get
-                      to know you better
-                    </p>
+                    <h1 className="h1 bannerDesc">
+                      <strong>
+                        Making the transition into adulthood easy for foster
+                        youths!
+                      </strong>
+                    </h1>
 
                     <div
                       className="d-flex p-2 justify-content-center mt-5"
@@ -126,7 +128,10 @@ class Landing extends Component {
                           this.handleScrollToElement();
                         }}
                       >
-                        <span className="mr-3"> Start To Build Your Plan </span>
+                        <span className="mr-3 display-6 btnFont">
+                          {" "}
+                          Start Building Your Plan{" "}
+                        </span>
                         <i className="fas fa-arrow-down" />
                       </button>
                     </div>
@@ -139,12 +144,12 @@ class Landing extends Component {
 
         {/**check list head */}
         <section id="create-head-section" className="">
-          <div className="container text-center">
+          <div className="container contentFont text-center">
             <div className="row">
               <div className="col text-center">
                 <div className="container p-3">
                   <div className="d-flex ">
-                    <div className="col-sm-6 mr-5 d-none d-md-block">
+                    <div className="col-sm-6 mr-5 d-none d-lg-block">
                       <img
                         src={require(`../../img/planner2.jpg`)}
                         alt=""
@@ -152,42 +157,52 @@ class Landing extends Component {
                       />
                     </div>
 
-                    <div className="col-md-6">
+                    <div className="col-md">
                       <h1>Are You Ready To Get Started?</h1>
                       {/* Square check list*/}
                       <div id="ready-section ">
-                        <div className="d-flex flex-row justify-content-stat">
-                          <div className="p-4 align-self-center">
+                        <div className="d-flex flex-row justify-content-start">
+                          <div className="p-4 align-self-start">
                             <i className="fas fa-check fa-2x" />
                           </div>
                           <div className="p-4 align-self-end lead">
-                            50% of these youth DO complete high school
+                            <p className="display-6">
+                              50% drop out of high school.
+                            </p>
                           </div>
                         </div>
 
                         <div className="d-flex  flex-row justify-content-start">
-                          <div className="p-4 align-self-center">
+                          <div className="p-4 align-self-start">
                             <i className="fas fa-check fa-2x " />
                           </div>
                           <div className="p-4 align-self-start lead">
-                            50% ARE able to find steady employment.
+                            <p className="display-6">
+                              Less than 3% earn a 4-year college degree.
+                            </p>
                           </div>
                         </div>
 
-                        <div className="d-flex  flex-row justify-content-center">
-                          <div className="p-4 align-self-center">
+                        <div className="d-flex  flex-row justify-content-start">
+                          <div className="p-4 align-self-start">
                             <i className="fas fa-check fa-2x" />
                           </div>
                           <div className="p-4 align-self-start lead">
-                            80% Find stable housing within 2 years of aging out
+                            <p className="display-6">
+                              50% struggle with unemployment.
+                            </p>
                           </div>
                         </div>
+
                         <div className="d-flex  flex-row justify-content-start">
-                          <div className="p-4 align-self-center">
+                          <div className="p-4 align-self-start">
                             <i className="fas fa-check fa-2x" />
                           </div>
                           <div className="p-4 align-self-start lead">
-                            30% ARE NOT pregnant by age 21.
+                            <p className="display-6">
+                              58% felt adequately prepared for transitioning to
+                              independence.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -207,7 +222,9 @@ class Landing extends Component {
                 <div className="container pt-5">
                   <div className="d-flex justify-content-center">
                     {" "}
-                    <h1>See What We Can Do</h1>
+                    <h1 className="h1">
+                      <strong>See What We Can Do</strong>
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -224,7 +241,7 @@ class Landing extends Component {
               </h1>
             </div>
 
-            <div className="row">
+            <div className="row ">
               {this.cards.map(card => (
                 <Card
                   id={card.id}
