@@ -198,9 +198,13 @@ img {
   font-size: 15px !important;
 }
 
+.display-1 {
+  font-size: 80px !important;
+}
+
 /* Landing : main banner data*/
 #homeTitle {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .carousel-item {
