@@ -202,7 +202,7 @@ class Landing extends Component {
           <div className="container">
             <div className="col text-center mb-5 ">
               <h1 className="display-3 titleFont">
-                <strong>Start Building Your Future Plan</strong>
+                <strong>Start Building Your Plan</strong>
               </h1>
             </div>
 
