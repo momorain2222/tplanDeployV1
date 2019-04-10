@@ -114,7 +114,7 @@ class Landing extends Component {
                     <h1 className="h1 bannerDesc mb-3">
                       <strong>
                         Making the transition into adulthood easy for foster
-                        youths !
+                        youths!
                       </strong>
                     </h1>
 
