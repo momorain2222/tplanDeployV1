@@ -13,9 +13,6 @@ const Footer = () => {
         </List>
       </Container>
     </Segment>
-    /*  <footer id="footer" className="bg-white text-grey mt-1 p-3 text-center">
-      Copyright &copy; {new Date().getFullYear()} Hijacks Team
-    </footer> */
   );
 };
 

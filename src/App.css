@@ -18,6 +18,11 @@ img {
   color: #fff;
 }
 
+/* Tableau View*/
+#tableauView {
+  min-height: 800px;
+}
+
 /* font family */
 .contentFont {
   min-height: 100%;
@@ -187,6 +192,10 @@ img {
 
 .display-7 {
   font-size: 17px !important;
+}
+
+.display-8 {
+  font-size: 15px !important;
 }
 
 /* Landing : main banner data*/

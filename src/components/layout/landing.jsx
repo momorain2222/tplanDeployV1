@@ -158,52 +158,41 @@ class Landing extends Component {
                 <h1 className="titleFont display-4">Our Mission</h1>
                 {/* Square check list*/}
                 <div>
-                  <div className="d-flex  justify-content-start">
-                    {/* <div className="p-3 align-self-start">
-                      <i className="fas fa-check fa-2x" />
-                    </div> */}
-                    <div className="align-self-start">
-                      <p className="display-5">
-                        We realize the complex needs each of you have and how
-                        hard it is for you to make the transition. We have
-                        collected the information about the most basic needs of
-                        every foster youth in this website. We want you to
-                        transition to adulthood just like any other youth out
-                        there.{" "}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/*   <div className="d-flex flex-row justify-content-start">
+                  <div className="d-flex flex-row justify-content-start">
                     <div className="p-3 align-self-start">
                       <i className="fas fa-check fa-2x " />
                     </div>
                     <div className="p-3 align-self-start lead">
                       <p className="display-6_1">
-                        50% are able to find steady employment.
+                        We realize the complex needs each of you have and how
+                        hard it is for you to make the transition.
                       </p>
                     </div>
                   </div>
- */}
-                  {/* <div className="d-flex flex-row justify-content-start">
+
+                  <div className="d-flex flex-row justify-content-start">
+                    <div className="p-3 align-self-start">
+                      <i className="fas fa-check fa-2x " />
+                    </div>
+                    <div className="p-3 align-self-start lead">
+                      <p className="display-6_1">
+                        We have collected the information about the most basic
+                        needs of every foster youth in this website.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="d-flex flex-row justify-content-start">
                     <div className="p-3 align-self-start">
                       <i className="fas fa-check fa-2x" />
                     </div>
                     <div className="p-3 align-self-start lead">
                       <p className="display-6_1">
-                        80% find stable housing within 2 years of aging out.
+                        We want you to transition to adulthood just like any
+                        other youth out there.{" "}
                       </p>
                     </div>
-                  </div> */}
-
-                  {/* <div className="d-flex flex-row justify-content-start">
-                    <div className="p-3 align-self-start">
-                      <i className="fas fa-check fa-2x" />
-                    </div>
-                    <div className="p-3 align-self-start lead">
-                      <p className="display-6_1">You will be one of them ! </p>
-                    </div>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>

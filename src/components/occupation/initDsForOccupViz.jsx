@@ -1,3 +1,4 @@
+//not use in I1
 export function initViz() {
   var containerDiv = document.getElementById("tableauPlaceholder"),
     url =

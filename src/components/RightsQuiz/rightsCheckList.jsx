@@ -33,7 +33,7 @@ const RightsCheckList = ({ programs }) => {
             <td className="center aligned">
               <div className="ui btn-info label">
                 <a target="_blank" href={program.url}>
-                  <p>Read More</p>
+                  <p className="display-8">Read More</p>
                 </a>
               </div>
             </td>

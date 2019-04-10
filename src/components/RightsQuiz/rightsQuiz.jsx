@@ -93,7 +93,8 @@ class RightsQuiz extends React.Component {
                   </h1>
 
                   <p className="display-6">
-                    Tell us about yourself and know the support you can receive
+                    Tell us about yourself and know all the support you can
+                    receive
                   </p>
 
                   {/* age range drop down buttons */}

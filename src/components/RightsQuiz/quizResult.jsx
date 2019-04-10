@@ -4,7 +4,7 @@ import RightsCheckList from "./rightsCheckList";
 
 import MainFooter from "../layout/mainFooter";
 
-const QuizResult = ({ result, programs, history }) => {
+const QuizResult = ({ scrollEleId, programs, history }) => {
   return (
     <div>
       <div id="quizResult">
@@ -16,8 +16,8 @@ const QuizResult = ({ result, programs, history }) => {
             <div className="card">
               <div className="p-4 gradient-card-header cloudy-knoxville-gradient text-dark text-left">
                 <p className="mb-0 pb-2 pt-2 display-6 text-center">
-                  You can get more information about each right by clicking the
-                  'read more' button.
+                  You can get more information about each benefit by clicking
+                  the 'read more' button.
                 </p>
 
                 <div className="card-body card-body-cascade text-center mt-1">
