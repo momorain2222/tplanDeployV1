@@ -201,7 +201,7 @@ class Landing extends Component {
         <section id="planner-section">
           <div className="container">
             <div className="col text-center mb-5 ">
-              <h1 className="display-3 titleFont">
+              <h1 className="display-3">
                 <strong>Start to Build Your Future Plan</strong>
               </h1>
             </div>
