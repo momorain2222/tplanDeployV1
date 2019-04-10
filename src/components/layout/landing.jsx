@@ -106,7 +106,7 @@ class Landing extends Component {
                   >
                     <h1
                       id="homeTitle"
-                      className="col-md-12 d-none d-lg-block text-white bannerTitle"
+                      className="col-md-12 d-none d-lg-block text-white bannerTitle display-2"
                     >
                       Plan Future With Confidence
                     </h1>
