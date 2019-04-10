@@ -68,7 +68,7 @@ class Landing extends Component {
   ];
 
   handleScrollToElement() {
-    var element = document.getElementById("planner-section");
+    var element = document.getElementById("middleBanner");
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -108,13 +108,13 @@ class Landing extends Component {
                       id="homeTitle"
                       className="col-md-12 d-none d-lg-block display-1 text-white bannerTitle"
                     >
-                      <strong>Plan Future With Confidence</strong>
+                      Plan Future With Confidence
                     </h1>
 
-                    <h1 className="h1 bannerDesc">
+                    <h1 className="h1 bannerDesc mb-3">
                       <strong>
                         Making the transition into adulthood easy for foster
-                        youths!
+                        youths !
                       </strong>
                     </h1>
 
@@ -143,71 +143,67 @@ class Landing extends Component {
         </div>
 
         {/**check list head */}
-        <section id="create-head-section" className="">
-          <div className="container contentFont text-center">
+        <section id="create-head-section">
+          <div className="container">
             <div className="row">
-              <div className="col text-center">
-                <div className="container p-3">
-                  <div className="d-flex ">
-                    <div className="col-sm-6 mr-5 d-none d-lg-block">
-                      <img
-                        src={require(`../../img/planner2.jpg`)}
-                        alt=""
-                        className="img-fluid rounded-circle mr-5"
-                      />
-                    </div>
+              <div className="col-sm mr-5 d-none d-lg-block">
+                <img
+                  src={require(`../../img/infoGraphic.png`)}
+                  alt=""
+                  className="img-fluid  mr-5"
+                />
+              </div>
 
-                    <div className="col-md">
-                      <h1>Are You Ready To Get Started?</h1>
-                      {/* Square check list*/}
-                      <div id="ready-section ">
-                        <div className="d-flex flex-row justify-content-start">
-                          <div className="p-4 align-self-start">
-                            <i className="fas fa-check fa-2x" />
-                          </div>
-                          <div className="p-4 align-self-end lead">
-                            <p className="display-6">
-                              50% drop out of high school.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="d-flex  flex-row justify-content-start">
-                          <div className="p-4 align-self-start">
-                            <i className="fas fa-check fa-2x " />
-                          </div>
-                          <div className="p-4 align-self-start lead">
-                            <p className="display-6">
-                              Less than 3% earn a 4-year college degree.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="d-flex  flex-row justify-content-start">
-                          <div className="p-4 align-self-start">
-                            <i className="fas fa-check fa-2x" />
-                          </div>
-                          <div className="p-4 align-self-start lead">
-                            <p className="display-6">
-                              50% struggle with unemployment.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="d-flex  flex-row justify-content-start">
-                          <div className="p-4 align-self-start">
-                            <i className="fas fa-check fa-2x" />
-                          </div>
-                          <div className="p-4 align-self-start lead">
-                            <p className="display-6">
-                              58% felt adequately prepared for transitioning to
-                              independence.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+              <div className="col-md">
+                <h1 className="titleFont display-4">Our Mission</h1>
+                {/* Square check list*/}
+                <div>
+                  <div className="d-flex  justify-content-start">
+                    {/* <div className="p-3 align-self-start">
+                      <i className="fas fa-check fa-2x" />
+                    </div> */}
+                    <div className="align-self-start">
+                      <p className="display-5">
+                        We realize the complex needs each of you have and how
+                        hard it is for you to make the transition. We have
+                        collected the information about the most basic needs of
+                        every foster youth in this website. We want you to
+                        transition to adulthood just like any other youth out
+                        there.{" "}
+                      </p>
                     </div>
                   </div>
+
+                  {/*   <div className="d-flex flex-row justify-content-start">
+                    <div className="p-3 align-self-start">
+                      <i className="fas fa-check fa-2x " />
+                    </div>
+                    <div className="p-3 align-self-start lead">
+                      <p className="display-6_1">
+                        50% are able to find steady employment.
+                      </p>
+                    </div>
+                  </div>
+ */}
+                  {/* <div className="d-flex flex-row justify-content-start">
+                    <div className="p-3 align-self-start">
+                      <i className="fas fa-check fa-2x" />
+                    </div>
+                    <div className="p-3 align-self-start lead">
+                      <p className="display-6_1">
+                        80% find stable housing within 2 years of aging out.
+                      </p>
+                    </div>
+                  </div> */}
+
+                  {/* <div className="d-flex flex-row justify-content-start">
+                    <div className="p-3 align-self-start">
+                      <i className="fas fa-check fa-2x" />
+                    </div>
+                    <div className="p-3 align-self-start lead">
+                      <p className="display-6_1">You will be one of them ! </p>
+                    </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -222,7 +218,7 @@ class Landing extends Component {
                 <div className="container pt-5">
                   <div className="d-flex justify-content-center">
                     {" "}
-                    <h1 className="h1">
+                    <h1 className="h1 font">
                       <strong>See What We Can Do</strong>
                     </h1>
                   </div>
@@ -236,7 +232,7 @@ class Landing extends Component {
         <section id="planner-section">
           <div className="container">
             <div className="col text-center mb-5 ">
-              <h1 className="display-3">
+              <h1 className="display-3 titleFont">
                 <strong>Start to Build Your Future Plan</strong>
               </h1>
             </div>

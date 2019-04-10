@@ -3,7 +3,7 @@ import Check from "../common/check";
 
 const RightsCheckList = ({ programs }) => {
   return (
-    <table className="  table ui selectable  fixed ">
+    <table className="table ui selectable fixed ">
       <thead>
         <tr className="center aligned">
           <th>Eligible</th>
@@ -31,7 +31,7 @@ const RightsCheckList = ({ programs }) => {
             </td>
 
             <td className="center aligned">
-              <div className="ui btn-info label ">
+              <div className="ui btn-info label">
                 <a target="_blank" href={program.url}>
                   <p>Read More</p>
                 </a>

@@ -63,12 +63,12 @@ const programs = [
     url:
       "https://www.humanservices.gov.au/individuals/services/centrelink/mobility-allowance",
     isChecked: false,
-    outcome: "You can claim anywhere between 97.90 - 136.90 every 2 weeks"
+    outcome: "You can claim anywhere between $97.90 - $136.90 every 2 weeks"
   },
   {
     _id: 8,
     name: "ABSTUDY",
-    require: [[11, 1], [12, 1]],
+    require: [[11, 1], [9, 1], [10, 1]],
     url:
       "https://www.humanservices.gov.au/individuals/services/centrelink/abstudy/eligibility",
     isChecked: false,

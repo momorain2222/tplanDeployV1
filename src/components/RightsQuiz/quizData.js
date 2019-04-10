@@ -39,7 +39,7 @@ const questions = [
   {
     _id: 3,
     ageGroup: [1, 2, 3, 4],
-    questionContent: `Are you an Australian citizen or a permanent resident (PR) holder??`,
+    questionContent: `Are you an Australian citizen or a Permanent Resident?`,
     //fact: `The Couch is currently entirely referral based. Which is great because we don't have time to chase down leads we're busy making the internet ;)`,
     choices: [
       {

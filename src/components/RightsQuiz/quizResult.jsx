@@ -9,16 +9,15 @@ const QuizResult = ({ result, programs, history }) => {
     <div>
       <div id="quizResult">
         <div className="container">
-          <h1 className="display-3">
-            {" "}
-            Completed ! You can consider these RIGHTS{" "}
+          <h1 className="display-3 titleFont">
+            Completed ! You can consider these BENEFITS{" "}
           </h1>
           <div className="d-flex flex-column justify-content-around">
             <div className="card">
               <div className="p-4 gradient-card-header cloudy-knoxville-gradient text-dark text-left">
-                <p className="mb-0 pb-2 pt-2 display-7 text-center">
+                <p className="mb-0 pb-2 pt-2 display-6 text-center">
                   You can get more information about each right by clicking the
-                  'read more' buttons
+                  'read more' button.
                 </p>
 
                 <div className="card-body card-body-cascade text-center mt-1">
@@ -35,7 +34,7 @@ const QuizResult = ({ result, programs, history }) => {
 
                   <button
                     type="button"
-                    className="btn btn-info col-6-md mt-5"
+                    className="btn btn-info col-6-md mt-5 "
                     onClick={() => history.replace("/rightsQuiz")}
                   >
                     <div className="d-flex flex-row p-2 justify-content-between">

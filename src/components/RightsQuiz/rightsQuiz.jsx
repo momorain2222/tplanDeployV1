@@ -64,71 +64,82 @@ class RightsQuiz extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="quiz-main-content">
+        <div id="quizStartContainer" className="quiz-main-content">
           <div id="quiz-section">
-            <div className="quiz-inner">
-              <div id="quiz-banner" className="py-5 bg-info text-white">
+            <div className="quiz-inner blueOverlay text-left">
+              <div className="py-5 text-white">
                 <div className="container">
-                  <div className="d-none d-sm-block text-center">
+                  <div className="d-none d-sm-block text-left">
                     <h1 className="bannerTitle display-2 my-4 ">
                       <strong>Know Your Benefits and allowance</strong>
                     </h1>
-                    <h4 className="display-4 bannerDesc">
-                      Start answer the short and quick questions
-                    </h4>
                   </div>
+
+                  <p className="display-6_1 bannerQuoteFont">
+                    "No matter our job, no matter our height, we all deserve to
+                    be treated right"
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="container contentFont" id="quiz-start-content">
-            <div className="d-flex justify-content-center align-items-center flex-column">
-              <h1 className="title m-5 col-10 text-center h1">
-                Are you confident in the future?
-              </h1>
-              <div className="text-center">
-                <article className="article">
-                  <p className="display-5">
-                    Tell us about yourself and know the support you are eligible
-                    to receive
-                  </p>
-                </article>
-              </div>
+          <div className="container mt-5" id="quiz-start-content">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="d-flex flex-column ">
+                  <h1 className="titleFont">
+                    Are you confident about your future?
+                  </h1>
 
-              {/*age range drop down button */}
-              <div className="row mt-5">
-                <div className="col mb-3 mr-5">
-                  <div className="d-flex flex-column justify-content center">
-                    <div className="text-center mb-5">
-                      {" "}
-                      <h2 className="text-info ">Choose your age group </h2>
-                    </div>
-                    <div className="required field">
-                      <DropdownSelect
-                        options={categories}
-                        onChnage={this.handleChange}
-                        error={this.state.error}
-                        placeholder={"Please select one age group"}
-                        id="quizDropDown"
-                      />
+                  <p className="display-6">
+                    Tell us about yourself and know the support you can receive
+                  </p>
+
+                  {/* age range drop down buttons */}
+                  <div className="row mt-3">
+                    <div className="col mb-5 mr-5">
+                      <div className="d-flex flex-column justify-content-start">
+                        <h2 className="text-info text-center">
+                          Choose your age group
+                        </h2>
+                        <div className="required field mt-4 mb-5">
+                          <DropdownSelect
+                            options={categories}
+                            onChnage={this.handleChange}
+                            error={this.state.error}
+                            placeholder={"Please select one age group"}
+                            id="quizDropDown"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="d-flex flex-row justify-content-center">
+                        {/*start button */}
+                        <button
+                          id="quizStartBtn"
+                          type="button"
+                          className="btn btn-info mt-3 mb-5"
+                          style={{ width: 250, height: 70 }}
+                          onClick={this.handleStart}
+                        >
+                          <div className="d-flex p-2 justify-content-between">
+                            <span className="btnFont"> Start </span>
+                            <i className="fas fa-arrow-right" />
+                          </div>
+                        </button>
+                      </div>
                     </div>
                   </div>
-
-                  {/*start button */}
-                  <button
-                    id="quizStartBtn"
-                    type="button"
-                    className="btn btn-info col-6-sm mt-5 mb-5"
-                    style={{ width: 250, height: 70 }}
-                    onClick={this.handleStart}
-                  >
-                    <div className="d-flex p-2 justify-content-between">
-                      <span className="btnFont"> Start </span>
-                      <i className="fas fa-arrow-right" />
-                    </div>
-                  </button>
                 </div>
+              </div>
+
+              <div className="col-md-6 d-none d-lg-block">
+                <img
+                  src={require(`../../img/rights_banner.jpg`)}
+                  alt=""
+                  className="img-fluid ml-5"
+                />
               </div>
             </div>
           </div>
