@@ -165,31 +165,11 @@ class Landing extends Component {
                     <div className="p-3 align-self-start lead">
                       <p className="display-6_1">
                         We realize the complex needs each of you have and how
-                        hard it is for you to make the transition.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex flex-row justify-content-start">
-                    <div className="p-3 align-self-start">
-                      <i className="fas fa-check fa-2x " />
-                    </div>
-                    <div className="p-3 align-self-start lead">
-                      <p className="display-6_1">
-                        We have collected the information about the most basic
-                        needs of every foster youth in this website.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex flex-row justify-content-start">
-                    <div className="p-3 align-self-start">
-                      <i className="fas fa-check fa-2x" />
-                    </div>
-                    <div className="p-3 align-self-start lead">
-                      <p className="display-6_1">
-                        We want you to transition to adulthood just like any
-                        other youth out there.{" "}
+                        hard it is for you to make the transition. We have
+                        collected the information about the most basic needs of
+                        every foster youth in this website. We want you to
+                        transition to adulthood just like any other youth out
+                        there.
                       </p>
                     </div>
                   </div>
