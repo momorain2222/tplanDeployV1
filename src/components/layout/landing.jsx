@@ -159,9 +159,9 @@ class Landing extends Component {
                 {/* Square check list*/}
                 <div>
                   <div className="d-flex flex-row justify-content-start">
-                    <div className="p-3 align-self-start">
+                    {/*  <div className="p-3 align-self-start">
                       <i className="fas fa-check fa-2x " />
-                    </div>
+                    </div> */}
                     <div className="p-3 align-self-start lead">
                       <p className="display-6_1">
                         We realize the complex needs each of you have and how
